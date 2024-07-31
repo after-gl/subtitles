@@ -61,4 +61,25 @@ This command will recognize the English text in the video and output it as an SR
 4. **Saving the Edited Subtitles:**
    - After making the necessary edits, save your work by going to `File > Save As` and choosing the desired format and location.
 
-This guide provides an overview of the process for generating and editing subtitles. For more detailed instructions and advanced features, refer to the official documentation of the respective tools.
+## Burning-In Subtitles to Render Video
+
+Burning-in subtitles means embedding the subtitles directly into the video, making them a permanent part of the visual track. This process is useful when you want to ensure that subtitles are always visible, regardless of the player's subtitle support.
+
+### Steps to Burn-In Subtitles:
+
+1. **Prepare the Video and Subtitle Files:**
+   - Ensure that you have the final edited SRT file and the video file.
+
+2. **Using a Video Editing Tool:**
+   - To burn-in subtitles, you can use video editing software such as **HandBrake**, **FFmpeg**, **Adobe Premiere Pro**, or similar tools. For example, using FFmpeg, the command might look like:
+
+   ```
+   ffmpeg -i "D:\videofile.mkv" -vf subtitles="D:\subtitles.srt" "D:\outputfile.mp4"
+   ```
+
+   - **`-i "D:\videofile.mkv"`**: Input video file.
+   - **`-vf subtitles="D:\subtitles.srt"`**: Apply the subtitle filter with the specified SRT file.
+   - **`"D:\outputfile.mp4"`**: Output video file with burned-in subtitles.
+
+3. **Rendering the Video:**
+   - Once the subtitles are embedded, render the video file. The output file will have the subtitles permanently overlaid.
