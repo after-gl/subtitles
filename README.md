@@ -20,7 +20,7 @@ To edit, review, and translate subtitles, the open-source program **Subtitle Edi
    - Get the latest version from the [Subtitle Edit GitHub Releases page](https://github.com/SubtitleEdit/subtitleedit/releases).
 
 2. **Read Documentation:**
-   - For more details on using Subtitle Edit, you can refer to the [documentation available here](https://github.com/SubtitleEdit/subtitleedit).
+   - For more details on using Subtitle Edit, you can refer to the [documentation available here](http://www.nikse.dk/SubtitleEdit/Help).
 
 3. **Integrate DeepL for Translation:**
    - You can enhance Subtitle Edit's translation capabilities by registering an API key with **DeepL**, a powerful translation service.
