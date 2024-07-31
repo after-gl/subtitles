@@ -20,7 +20,7 @@ To edit, review, and translate subtitles, the open-source program **Subtitle Edi
    - Get the latest version from the [Subtitle Edit GitHub Releases page](https://github.com/SubtitleEdit/subtitleedit/releases).
 
 2. **Read Documentation:**
-   - For more details on using Subtitle Edit, you can refer to the [documentation available here](https://github.com/Purfview/whisper-standalone-win?tab=readme-ov-file).
+   - For more details on using Subtitle Edit, you can refer to the [documentation available here](https://github.com/SubtitleEdit/subtitleedit).
 
 3. **Integrate DeepL for Translation:**
    - You can enhance Subtitle Edit's translation capabilities by registering an API key with **DeepL**, a powerful translation service.
@@ -61,25 +61,16 @@ This command will recognize the English text in the video and output it as an SR
 4. **Saving the Edited Subtitles:**
    - After making the necessary edits, save your work by going to `File > Save As` and choosing the desired format and location.
 
-## Burning-In Subtitles to Render Video
+### Steps to Burn-In Subtitles Using Subtitle Edit:
 
-Burning-in subtitles means embedding the subtitles directly into the video, making them a permanent part of the visual track. This process is useful when you want to ensure that subtitles are always visible, regardless of the player's subtitle support.
+1. **Load the Video and Subtitle Files:**
+   - In Subtitle Edit, open both the video file and the corresponding SRT subtitle file.
 
-### Steps to Burn-In Subtitles:
+2. **Access the Video Export Feature:**
+   - Go to `Video > Generate Video with Burned-in Subtitles`.
 
-1. **Prepare the Video and Subtitle Files:**
-   - Ensure that you have the final edited SRT file and the video file.
+3. **Configure Export Settings:**
+   - In the export settings, you can choose the video quality, subtitle appearance (font, size, color), and output format.
 
-2. **Using a Video Editing Tool:**
-   - To burn-in subtitles, you can use video editing software such as **HandBrake**, **FFmpeg**, **Adobe Premiere Pro**, or similar tools. For example, using FFmpeg, the command might look like:
-
-   ```
-   ffmpeg -i "D:\videofile.mkv" -vf subtitles="D:\subtitles.srt" "D:\outputfile.mp4"
-   ```
-
-   - **`-i "D:\videofile.mkv"`**: Input video file.
-   - **`-vf subtitles="D:\subtitles.srt"`**: Apply the subtitle filter with the specified SRT file.
-   - **`"D:\outputfile.mp4"`**: Output video file with burned-in subtitles.
-
-3. **Rendering the Video:**
-   - Once the subtitles are embedded, render the video file. The output file will have the subtitles permanently overlaid.
+4. **Start the Rendering Process:**
+   - Once you have configured your settings, start the rendering process. Subtitle Edit will process the video and embed the subtitles directly into it.
